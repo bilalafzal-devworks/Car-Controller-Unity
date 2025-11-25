@@ -14,10 +14,10 @@ public class CarController : MonoBehaviour
     Transform RearLeftWheelTransform;
     Transform RearRightWheelTransform;
 
-    // Rigidbody
+    
     Rigidbody rb;
 
-    // Vehicle tuning values
+    
     [Header("Car Settings")]
     public float motorForce = 2500f;
     public float brakeForce = 3000f;
@@ -31,7 +31,7 @@ public class CarController : MonoBehaviour
 
     void Awake()
     {
-        // ✅ Correct hierarchy path based on your screenshot
+       
         Transform colliderParent = transform.Find("Wheels/Colliders");
 
         if (colliderParent == null)
